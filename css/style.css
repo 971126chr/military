@@ -100,10 +100,16 @@ label.search-text {
 }
 .aside {
     width: 203px;
+    display: inline-block;
+}
+.aside > div, .section > div {
+    border: 1px solid #a1c7f2;
+}
+.aside > div:not(:first-child), .section > div:not(:first-child) {
+    margin-top: 8px;
 }
 .weather {
     padding: 0 11px 0 10px;
-    border: 1px solid #a1c7f2;
     background: #f5f9fe;
 }
 .weather-content {
@@ -178,9 +184,7 @@ h3.tomorrow-weather-h3 {
     font-size: 0;
 }
 .communication {
-    margin-top: 8px;
-    border: 1px solid #a1c7f2;
-    padding: 4px 0 10px 5px;
+    padding: 4px 0 9px 5px;
 }
 span.character {
     background: url("../img/main/aside/character.png") no-repeat top;
@@ -199,5 +203,83 @@ span.communication-text {
     display: inline-block;
 }
 .communication-btn-position {
-    margin-top: 12px;
+    margin-top: 22px;
+    font-size: 0;
+    line-height: 23px;
+    padding-left: 19px;
+}
+button.communication-btn-left, button.communication-btn-right {
+    border: none;
+    background: url("../img/main/aside/communication-btn-left.png") no-repeat;
+    padding: 11.5px 35.5px;
+}
+button.communication-btn-right {
+    background: url("../img/main/aside/communication-btn-right.png") no-repeat;
+    margin-left: 16px;
+}
+.main-activity {
+    padding: 6px 12px 4px 9px;
+}
+h2.main-activity-h2 {
+    background: url("../img/main/aside/main-activity-h2.png") no-repeat left center;
+    line-height: 17px;
+    font-size: 0;
+}
+.main-activity-box {
+    padding-left: 3px;
+    margin-top: 8px;
+}
+.main-activity-img {
+    border: 1px solid #999999;
+}
+.main-activity-text {
+    margin-top: 2px;
+    font: 12px "굴림";
+    text-align: center;
+}
+.introduce {
+    background: url("../img/main/aside/introduce.png") no-repeat;
+    line-height: 34px;
+    font-size: 0;
+}
+.multiplex {
+    padding: 6px 0 8px 7px;
+}
+span.multiplex-marker {
+    background: url("../img/main/aside/multiplex-marker.png") no-repeat left center;
+    padding-left: 27px;
+    vertical-align: middle;
+    /* font: 16px bold; 
+    font-family: 'HYWULM';*/
+}
+.multiplex-marker img {
+    vertical-align: top;
+    margin-left: 17px;
+}
+.popup-list {
+    padding: 7px 9px 38px;
+}
+h2.popup-list-h2 {
+    background: url("../img/main/aside/popup-list-h2.png") no-repeat left center;
+    font-size: 0;
+    padding: 8px 34.5px;
+}
+.popup-list img {
+    margin-top: 15px;
+}
+
+/*section 시작*/
+
+.section {
+    margin-left: 4px;
+    display: inline-block;
+}
+.notice {
+    padding: 6px 5px 0 9px;
+}
+h2.notice-h2 {
+    background: url("../img/main/section/notice-h2.png") no-repeat;
+    display: inline-block;
+    padding: 9px 56.5px;
+    font-size: 0;
 }
