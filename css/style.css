@@ -102,10 +102,15 @@ label.search-text {
     width: 203px;
     display: inline-block;
 }
-.aside > div, .section > div:not(:nth-child(4)), .section > div:nth-child(4) > div {
+.aside > div, 
+.section > div:not(:nth-child(4)), 
+.section > div:nth-child(4) > div,
+.column-right > div {
     border: 1px solid #a1c7f2;
 }
-.aside > div:not(:first-child), .section > div:not(:first-child) {
+.aside > div:not(:first-child),
+.section > div:not(:first-child),
+.column-right > div:not(:first-child) {
     margin-top: 8px;
 }
 .weather {
@@ -270,9 +275,10 @@ h2.popup-list-h2 {
 
 /*section 시작*/
 
-.section {
+.section, .column-right {
     margin-left: 4px;
     display: inline-block;
+    vertical-align: top;
 }
 .notice {
     padding: 6px 5px 26px 9px;
@@ -374,7 +380,8 @@ span.real-love-brown-small {
     font-size: 10px;
     letter-spacing: 0.5px;
 }
-.real-love-text > span.real-love-brown:nth-child(2) {
+.real-love-text > span.real-love-brown:nth-child(2),
+.ucc-text > span.real-love-brown:nth-child(3) {
     margin-left: 6px;
 }
 p.real-love-p {
@@ -390,9 +397,13 @@ a.real-love-more {
 .section > div:nth-child(4) > div {
     width: 175px;
     display: inline-block;
+    vertical-align: top;
+}
+.section > div:nth-child(4) > div:not(:first-child) {
+    margin-left: 3.5px;
 }
 .ucc {
-    padding: 4px 1px 0 2px;
+    padding: 4px 1px 3px 2px;
 }
 .ucc-header {
     padding-left: 8px;
@@ -408,9 +419,145 @@ img.ucc-img {
 .ucc-text {
     margin-top: 4px;
     padding-left: 4px;
+    font-size: 13px;
 }
 h3.ucc-text-h3 {
-    font-size: 13px;
     color: #79b1ba;
     letter-spacing: -0.3px;
+}
+.ucc-text span.real-love-brown {
+    padding-left: 1px;
+    line-height: 24px;
+}
+p.ucc-p {
+    margin-top: 0;
+    color: #7d7d7d;
+    letter-spacing: -0.79px;
+}
+span.ucc-p-dot {
+    margin-left: 8px;
+    letter-spacing: 1px;
+}
+a.ucc-more {
+    padding-left: 0;
+    margin-left: -1px;
+}
+.photo {
+    padding: 7px 0 4px 2px;
+}
+h2.photo-h2 {
+    background: url("../img/main/section/photo-h2.png") no-repeat;
+    padding: 8px 64px;
+    font-size: 0;
+}
+img.photo-img {
+    margin-top: 10px;
+}
+.photo-text {
+    margin-top: 1px;
+    padding-left: 2px;
+}
+h3.photo-text-h3 {
+    letter-spacing: 0;
+}
+span.photo-p-dot {
+    margin-left: 6px;
+}
+.leader {
+    padding: 6px 5px 7px 8px;
+}
+h2.leader-h2 {
+    background: url("../img/main/section/leader-h2.png") no-repeat;
+    font-size: 0;
+    padding: 8.5px 67.5px;
+}
+div.leader-p {
+    position: relative;
+    padding: 90px 80px;
+}
+.more-position {
+    position: absolute;
+    bottom: -1px;
+    right: 0;
+}
+.more-position > a.real-love-more {
+    margin-left: -6px;
+}
+.mkiss {
+    padding: 7px 9px 4px 10px;
+    position: relative;
+}
+h2.mkiss-h2 {
+    font-size: 0;
+    background: url("../img/main/section/mkiss-h2.png") no-repeat;
+    padding: 7.5px 28.5px;
+}
+button.mkiss-btn {
+    border: none;
+    background: url("../img/main/section/mkiss-all-list-btn.png") no-repeat;
+    padding: 9px 32px;
+    font-size: 0;
+    position: absolute;
+    top: 5px;
+    right: 11px;
+}
+ul.mkiss-list {
+    padding-left: 2px;
+    margin-top: 11px;
+}
+ul.mkiss-list li {
+    line-height: 23px;
+}
+ul.mkiss-list li a {
+    font-size: 13px;
+    background: url("../img/main/section/mkiss-list-marker.png") no-repeat left center;
+    padding-left: 16px;
+    color: #1f3174;
+    letter-spacing: -0.7px;
+}
+span.mkiss-list-text {
+    display: inline-block;
+    width: 430px;
+}
+span.mkiss-list-date {
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+.blank {
+    padding-top: 25px;
+}
+
+/*right contents 시작*/
+
+.column-right { 
+    margin-left: 3px;
+    width: 201.5px;
+}
+.login {
+    padding: 5px 7px 7px 7px;
+}
+.your-information {
+    padding: 0 7px;
+}
+.login-header {
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e4e4e4;
+}
+img.your-army-mark {
+    vertical-align: top;
+}
+span.your-id {
+    font-size: 0;
+    background: url("../img/main/column-right/your-id.png") no-repeat top;
+    padding: 7.5px 28px 8.5px;
+    vertical-align: super;
+    margin-left: 2px;
+}
+button.logout-btn {
+    font-size: 0;
+    border: none;
+    background: url("../img/main/column-right/logout-btn.png") no-repeat right;
+    vertical-align: text-bottom;
+    margin-left: 38.2px;
+    padding: 9px 23.5px;
 }
