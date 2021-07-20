@@ -96,7 +96,7 @@ label.search-text {
 .main {
     border: 1px solid #d1d1d1;
     border-top: none;
-    padding: 5px 7px 80px;
+    padding: 5px 6px 80px 7px;
 }
 .aside {
     width: 203px;
@@ -276,7 +276,7 @@ h2.popup-list-h2 {
 /*section 시작*/
 
 .section, .column-right {
-    margin-left: 4px;
+    margin-left: 3px;
     display: inline-block;
     vertical-align: top;
 }
@@ -531,13 +531,13 @@ span.mkiss-list-date {
 
 .column-right { 
     margin-left: 3px;
-    width: 201.5px;
+    width: 202px;
 }
 .login {
-    padding: 5px 7px 7px 7px;
+    padding: 5px 6px 6px 7px;
 }
 .your-information {
-    padding: 0 7px;
+    padding: 0 6px 0 7px;
 }
 .login-header {
     padding-bottom: 4px;
@@ -551,13 +551,57 @@ span.your-id {
     background: url("../img/main/column-right/your-id.png") no-repeat top;
     padding: 7.5px 28px 8.5px;
     vertical-align: super;
-    margin-left: 2px;
+    margin-left: 1px;
 }
 button.logout-btn {
     font-size: 0;
     border: none;
     background: url("../img/main/column-right/logout-btn.png") no-repeat right;
     vertical-align: text-bottom;
-    margin-left: 38.2px;
+    margin-left: 40.2px;
     padding: 9px 23.5px;
+}
+dl.your-login-information-list {
+    margin-top: 3.5px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #54564b;
+    letter-spacing: -1.8px;
+}
+dl.your-login-information-list dt, dl.your-login-information-list dd {
+    display: inline-block;
+}
+dl.your-login-information-list dt {
+    background: url("../img/main/column-right/login-dt-marker.png") no-repeat left center;
+    padding-left: 7px;
+}
+.login-img-list {
+    margin-top: 4.5px;
+}
+.img-border {
+    width: 114px;
+    height: 178px;
+    border: 1px solid #282828;
+    display: inline-block;
+}
+img.login-img {
+    vertical-align: baseline;
+}
+ul.information-list {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -1px;
+}
+ul.information-list li {
+    border: 1px solid #b8bce2;
+    line-height: 18px;
+    height: 22px;
+}
+ul.information-list li:not(:last-child) {
+    margin-bottom: 4px;
+}
+ul.information-list li a {
+    font-size: 12px;
+    padding: 3px 8.5px;
+    color: #6b7bb3;
 }
